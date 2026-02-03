@@ -1,0 +1,21 @@
+body { font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 20px; }
+.container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+h1 { text-align: center; color: #333; }
+
+/* Dashboard Styling */
+.dashboard { display: flex; justify-content: space-around; margin-bottom: 20px; }
+.stat-card { background: #007bff; color: white; padding: 15px 30px; border-radius: 8px; font-weight: bold; font-size: 1.2rem; }
+
+/* Table Styling */
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { padding: 12px; border: 1px solid #ddd; text-align: center; }
+th { background-color: #333; color: white; }
+
+/* Button Styling */
+button { padding: 5px 10px; cursor: pointer; border: none; border-radius: 4px; color: white; margin: 2px; }
+.btn-p { background-color: #28a745; }
+.btn-a { background-color: #dc3545; }
+
+/* Status Text Colors */
+.present-text { color: green; font-weight: bold; }
+.absent-text { color: red; font-weight: bold; }
