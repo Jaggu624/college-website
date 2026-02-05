@@ -1,225 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>WESLEY DEGREE COLLEGE | Official Website</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>WESLEY DEGREE COLLEGE | Attendance</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-         <h1>WESLEY DEGREE COLLEGE</h1>
-    <h3>Final Year B.Sc Students Attendance</h3>
-    <p>B.Sc Students | Academic Year 2025–2026</p>
-    <hr>
-        
-        <div class="dashboard">
-            <div class="stat-card">Total Present: <span id="presentCount">0</span></div>
-            <div class="stat-card">Total Absent: <span id="absentCount">0</span></div>
-        </div>
 
-        <table id="attendanceTable">
-            <thead>
-                <tr>
-                    <th>Roll No.</th>
-                    <th>Student Name</th>
-                    <th>Actions</th>
-                    <th>Status</th>
-                    <th>Date & Time</th>
-                </tr>
-            </thead>
-            <tbody>
-               <tr>
-                    <td>1251-23-474-001</td>
-                    <td>Kayomarz</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-                 <tr>
-                    <td>1251-23-474-002</td>
-                    <td>Jagadeesh</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-                <tr>
-                    <td>1251-23-474-004</td>
-                    <td>Kiran Teja</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-                <tr>
-                    <td>1251-23-474-006</td>
-                    <td>Pranava</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-                <tr>
-                    <td>1251-23-474-007</td>
-                    <td>Vamshi Krishna</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-                <tr>
-                    <td>1251-23-474-008</td>
-                    <td>Rohith kumar</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-                <tr>
-                    <td>1251-23-468-001</td>
-                    <td>Ashok</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-                <tr>
-                    <td>1251-23-468-002</td>
-                    <td>Duggaraj Rohith</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-                <tr>
-                    <td>1251-23-468-003</td>
-                    <td>Tharun</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-                <tr>
-                    <td>1251-23-468-004</td>
-                    <td>Nazeer</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-                <tr>
-                    <td>1251-23-468-006</td>
-                    <td>Jashwanth</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-                <tr>
-                    <td>1251-23-468-007</td>
-                    <td>Druwasen</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-                <tr>
-                    <td>1251-23-468-008</td>
-                    <td>Sri hari</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-                <tr>
-                    <td>1251-23-468-009</td>
-                    <td>Sri hari goud</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-                <tr>
-                    <td>1251-23-468-010</td>
-                    <td>Vinith</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-                <tr>
-                    <td>1251-23-467-001</td>
-                    <td>Sharon</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-                <tr>
-                    <td>1251-23-467-002</td>
-                    <td>Rishindra</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-                <tr>
-                    <td>1251-23-468-003</td>
-                    <td>Anjani</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-                <tr>
-                    <td>1251-23-468-004</td>
-                    <td>Revanth</td>
-                    <td>
-                        <button class="btn-p" onclick="mark(this, 'Present')">Present</button>
-                        <button class="btn-a" onclick="mark(this, 'Absent')">Absent</button>
-                    </td>
-                    <td class="status"></td>
-                    <td class="time"></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <script src="script.js"></script>
+<div class="container">
+  <h1>WESLEY DEGREE COLLEGE</h1>
+  <h3>Final Year B.Sc Students Attendance</h3>
+  <p>Academic Year 2025–2026</p>
+
+  <div class="dashboard">
+    <div class="card present">Present: <span id="presentCount">0</span></div>
+    <div class="card absent">Absent: <span id="absentCount">0</span></div>
+  </div>
+
+  <!-- ================= MEC ================= -->
+  <h2>B.Sc (MEC’s) – Electronics</h2>
+  <table>
+    <tr>
+      <th>Roll No</th><th>Name</th><th>Language</th>
+      <th>Action</th><th>Status</th><th>Date & Time</th>
+    </tr>
+
+    <tr><td>1251-23-474-001</td><td>Kayomarz</td><td>Hindi</td>
+      <td><button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+
+    <tr><td>1251-23-474-002</td><td>Jagadeesh</td><td>Sanskrit</td>
+      <td><button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+
+    <tr><td>1251-23-474-004</td><td>Kiran Teja</td><td>Sanskrit</td>
+      <td><button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+
+    <tr><td>1251-23-474-006</td><td>Pranava</td><td>Hindi</td>
+      <td><button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+
+    <tr><td>1251-23-474-007</td><td>Vamshi Krishna</td><td>Telugu</td>
+      <td><button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+
+    <tr><td>1251-23-474-008</td><td>Rohith Kumar</td><td>Hindi</td>
+      <td><button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+  </table>
+
+  <!-- ================= MPC ================= -->
+  <h2>B.Sc (MPC’s) – Physics</h2>
+  <table>
+    <tr>
+      <th>Roll No</th><th>Name</th><th>Language</th>
+      <th>Action</th><th>Status</th><th>Date & Time</th>
+    </tr>
+
+    <tr><td>1251-23-468-001</td><td>Ashok</td><td>Sanskrit</td><td>
+      <button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+
+    <tr><td>1251-23-468-002</td><td>Duggaraj Rohith</td><td>Hindi</td><td>
+      <button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+
+    <tr><td>1251-23-468-003</td><td>Tharun</td><td>Sanskrit</td><td>
+      <button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+
+    <tr><td>1251-23-468-004</td><td>Nazeer</td><td>Hindi</td><td>
+      <button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+
+    <tr><td>1251-23-468-006</td><td>Jashwanth</td><td>Sanskrit</td><td>
+      <button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+
+    <tr><td>1251-23-468-007</td><td>Druwasen</td><td>Sanskrit</td><td>
+      <button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+
+    <tr><td>1251-23-468-008</td><td>Sri Hari</td><td>Telugu</td><td>
+      <button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+
+    <tr><td>1251-23-468-009</td><td>Sri Hari Goud</td><td>Sanskrit</td><td>
+      <button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+
+    <tr><td>1251-23-468-010</td><td>Vinith</td><td>Sanskrit</td><td>
+      <button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+  </table>
+
+  <!-- ================= MSC ================= -->
+  <h2>B.Sc (MSC’s) – Statistics</h2>
+  <table>
+    <tr>
+      <th>Roll No</th><th>Name</th><th>Language</th>
+      <th>Action</th><th>Status</th><th>Date & Time</th>
+    </tr>
+
+    <tr><td>1251-23-467-001</td><td>Sharon</td><td>Telugu</td><td>
+      <button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+
+    <tr><td>1251-23-467-002</td><td>Rishindra</td><td>Telugu</td><td>
+      <button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+
+    <tr><td>1251-23-468-003</td><td>Anjani</td><td>Sanskrit</td><td>
+      <button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+
+    <tr><td>1251-23-468-004</td><td>Revanth</td><td>Sanskrit</td><td>
+      <button onclick="mark(this,'Present')">Present</button>
+      <button class="abs" onclick="mark(this,'Absent')">Absent</button></td>
+      <td class="status"></td><td class="time"></td></tr>
+  </table>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
